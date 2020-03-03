@@ -1,0 +1,6 @@
+<form [formGroup]="form">
+    <div [formGroupName]="formSectionId">
+        <form-element *ngFor="let formElement of formSection.elements" [form]="form" [formSectionId]="formSectionId" [formElement]="formElement">
+        </form-element>
+    </div>
+</form>

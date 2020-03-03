@@ -1,0 +1,8 @@
+<div *ngIf="fieldControl.enabled" [formGroup]="form">
+    <div [formGroupName]="formSectionId">
+        <input [formControlName]="formElement.id" [placeholder]="formElement.label" />
+        <div *ngIf="fieldControl.invalid && (fieldControl.touched || fieldControl.dirty)">
+            error
+        </div>
+    </div>
+</div>
